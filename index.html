@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/output.css" rel="stylesheet">
+    <title>Arturo Cristeche</title>
+    <script src="/scripts/actions.js" defer></script>
+    <script src="/scripts/files.js" defer></script>
+    <script src="/scripts/masks.js" defer></script>
+    <script src="/scripts/wakatime.js" defer></script>
+</head>
+
+<body>
+    <div class="max-w-7xl mx-auto">
+        <header class="py-6">
+            <nav class="py-4 px-12 space-x-4 flex justify-center items-center h-20">
+                <a href="#skills"
+                    class="text-gray-500 border-b-2 border-transparent hover:text-gray-900 focus:outline-none focus:border-gray-500 font-medium">Skills</a>
+                <a href="#projects"
+                    class="text-gray-500 border-b-2 border-transparent hover:text-gray-900 focus:outline-none focus:border-gray-500 font-medium">Projects</a>
+                <a href="#contact"
+                    class="text-gray-500 border-b-2 border-transparent hover:text-gray-900 focus:outline-none focus:border-gray-500 font-medium">Contact</a>
+            </nav>
+            <div 
+                class="flex flex-col lg:flex-row-reverse w-full justify-center items-center lg:justify-between py-8 px-4 space-y-12 lg:space-y-0">
+                <div class="max-h-[25em] max-w-[25em] overflow-hidden">
+                    <img src="avatar.jpeg" alt="My Picture" class="object-cover" />
+                </div>
+                <div class="flex flex-col items-center justify-center lg:items-start lg:justify-between space-y-12">
+                    <h1 class="text-5xl text-gray-900">Arturo Cristeche</h1>
+                    <p class="max-w-[24em] text-2xl text-gray-500 text-center lg:text-left">
+                        I’m a software developer and here is my portfolio website. Here you’ll learn about my journey as
+                        a
+                        software developer.
+                    </p>
+                    <button
+                        class="bg-red-600 hover:bg-red-500 active:bg-red-700 py-4 px-8 text-base rounded text-white font-semibold focus:outline-none focus:ring-2 focus:ring-red-600 focus:ring-offset-1 w-full lg:w-auto">Hire
+                        me</button>
+                </div>
+            </div>
+        </header>
+        <!-- skills -->
+        <div class="h-96 w-full bg-green-500">
+            <body class="p-12">
+                <div>
+                    HTML
+                    <br />
+                    <span id="htmlHours"></span>
+                </div>
+                <div>
+                    CSS
+                    <br />
+                    <span id="cssHours"></span>
+                </div>
+                <div>
+                    JavaScript
+                    <br />
+                    <span id="javaScriptHours"></span>
+                </div>
+            </body>
+        </div>
+        <!-- projects -->
+        <div class="h-96 w-full bg-green-100">projects</div>
+        <!-- contact -->
+        <div class="h-96 w-full bg-blue-100">contact</div>
+        <!-- footer -->
+        <footer class="h-96 w-full bg-amber-700">footer</footer>
+    </div>
+</body>
+
+</html>
