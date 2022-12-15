@@ -1,3 +1,4 @@
+
 async function fetchMyStats(){
     const response = await fetch('https://nextjs-red-six-46.vercel.app/api/wakatime/cristechear', {
         method: 'GET',
@@ -21,12 +22,15 @@ async function fetchMyStats(){
     window.document.querySelector("#htmlHours").innerText = htmlHours;
     window.document.querySelector("#cssHours").innerText = cssHours;
     window.document.querySelector("#javaScriptHours").innerText = javaScriptHours;
-}
-
-function getLanguageHours(languages, languageName){
-    const result = languages.filter(lan => lan.name === languageName)
-    const html = result[0];
-    return html.hours;
-}
-
-fetchMyStats();
+ }
+ 
+ function getLanguageHours(languages, languageName){
+     const result = languages.filter(lan => lan.name === languageName)
+     const html = result[0];
+     if(html)
+      return html.hours + "H";
+     else
+      return "0H";
+  }
+ 
+ fetchMyStats();
