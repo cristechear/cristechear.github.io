@@ -1,13 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./*.{html,css,js}"
+        "./*.{html,css,js,jsx,ts,tsx}",
+        "./public/index.html",
     ],
     theme: {
         extend: {
             fontFamily: {
                 'sans': ['Roboto'],
-            }
+            },
+            backgroundImage: {
+                'header-bg': "url('/headerBackground.jpg')",
+              }
         },
     },
     plugins: [
@@ -16,4 +20,5 @@ module.exports = {
         require('@tailwindcss/line-clamp'),
         require('@tailwindcss/aspect-ratio'),
     ],
+    
 }
